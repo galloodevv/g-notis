@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Notificaciones</title>
+</head>
+<body>
+    <div class="container">
+        <div id="notification-center">
+            <!-- Las notificaciones se agregarán aquí dinámicamente -->
+        </div>
+    </div>
+
+    <template id="notification-template">
+        <div class="notification">
+            <div class="notification-icon">
+                <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+            </div>
+            <div class="notification-content">
+                <h3 class="notification-title">Título de la notificación</h3>
+                <p class="notification-message">Mensaje de la notificación</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

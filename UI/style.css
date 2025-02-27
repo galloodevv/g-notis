@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+.container {
+    position: fixed;
+    top: 25vh;
+    right: 2vh;
+    width: 32vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1vh;
+}
+
+#notification-center {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.notification {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 1.2vh;
+    padding: 1.5vh;
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    box-shadow: 0 0.4vh 1.5vh rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s ease;
+    min-height: 5vh;
+    width: calc(100% - 3vh);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification:hover {
+    transform: translateY(-0.3vh);
+    box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.notification-icon {
+    font-size: 2vh;
+    margin-right: 1.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    color: #ffffff;
+}
+
+.notification-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4vh;
+}
+
+.notification-title {
+    margin: 0;
+    font-size: 1.4vh;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.notification-message {
+    margin: 0;
+    font-size: 1.2vh;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Estilos específicos por tipo */
+.notification.success {
+    background: rgba(22, 101, 52, 0.95);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.notification.success .notification-icon {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #ffffff;
+}
+
+.notification.warning {
+    background: rgba(120, 53, 15, 0.95);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.notification.warning .notification-icon {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #ffffff;
+}
+
+.notification.error {
+    background: rgba(127, 29, 29, 0.95);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.notification.error .notification-icon {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #ffffff;
+}
+
+.notification.info {
+    background: rgba(30, 58, 138, 0.95);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.notification.info .notification-icon {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #ffffff;
+}
