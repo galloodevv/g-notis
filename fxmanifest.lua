@@ -3,7 +3,7 @@ games { 'gta5' }
 author 'gallo.scripts'
 
 description '.gg/mrxstudio'
-repo 'https://github.com/mrxstudio/gNotify'
+repo 'https://github.com/galloodevv/g-notis/'
 
 lua54 'yes'
 
