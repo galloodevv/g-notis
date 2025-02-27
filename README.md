@@ -1,6 +1,6 @@
 # 🔔 g-notis - Sistema de Notificaciones para FiveM
 
-![g-notis Preview](https://imgur.com/a/ru730kl)
+![g-notis Preview](https://i.imgur.com/UPVesT0.png)
 
 ## 📌 Descripción
 **g-notis** es un sistema de notificaciones elegante y moderno para FiveM. Diseñado para mejorar la experiencia del usuario con alertas visualmente atractivas, animaciones suaves y efectos de sonido únicos.
