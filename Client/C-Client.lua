@@ -19,7 +19,7 @@ function gShowNotification(mensaje, tipo)
     })
 end
 
--- Notification command examples
+
 RegisterCommand('noti_info', function()
     gShowNotification('Esta es una notificación informativa', 'info')
 end)
